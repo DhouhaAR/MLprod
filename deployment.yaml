@@ -22,7 +22,7 @@ spec:
         name: my-kube-api     # POD name 
         command: ["python3", "api.py" ]
         ports:
-        - containerPort: 5001
+        - containerPort: 5000
           protocol: TCP
 
 ---
@@ -37,7 +37,7 @@ spec:
   type: LoadBalancer
   ports:
   - port: 5000
-    targetPort: 5001
+    targetPort: 5000
   selector:
     app: my-app
 
