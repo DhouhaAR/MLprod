@@ -1,7 +1,3 @@
-#!/usr/bin/python3
-# inference.py
-# Xavier Vasques 13/04/2021
-
 
 import platform; print(platform.platform())
 import sys; print("Python", sys.version)
